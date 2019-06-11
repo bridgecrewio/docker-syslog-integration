@@ -3,14 +3,14 @@ version: 2
 jobs:
   circleci-image-build:
     machine: true
-    working_directory: ~/
     environment:
       REPO_NAME: bridgecrew
       IMAGE_NAME: syslog-integration
       IMAGE_VERSION: 1
 
     steps:
-      - checkout
+      - checkout:
+          path: ~/syslog-integration
       - run:
           name: Login docker hub
           command: |
