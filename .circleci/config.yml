@@ -3,6 +3,7 @@ version: 2
 jobs:
   circleci-image-build:
     machine: true
+    working_directory: ~/syslog-integration
     environment:
       REPO_NAME: bridgecrew
       IMAGE_NAME: syslog-integration
