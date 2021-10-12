@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:7.1.1
+FROM docker.elastic.co/logstash/logstash:8.0.1
 
 EXPOSE 9910
 
